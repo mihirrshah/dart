@@ -80,7 +80,7 @@ public class FileUploadController {
 					"You failed to upload " + name + " because the file was empty");
 		}
 
-		return "home";
+		return "redirect:/listfiles";
 	}
 
 }
