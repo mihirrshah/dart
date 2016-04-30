@@ -12,13 +12,17 @@ public class Customer {
 	private String telephoneNbr;
 	private String city;
 	private String state;
-	private String fraddl;
 	private String postalCode;
 	private String countryCode;
 	private String streetName;
 	private String structureNum;
-	private String fraddr;
-	//private String prop_Image;
+
+
+	
+
+	private String url_img;
+	private String severity;
+	private String exposure;
 	
 	
 	public Customer() {}
@@ -31,13 +35,10 @@ public class Customer {
 		this.position = position;
 		this.telephoneNbr = telephoneNbr;
 		this.city = city;
-		this.state = state;
-	//	this.fraddl = fraddl;
 		this.postalCode = postalCode;
 		this.countryCode = countryCode;
 		this.streetName = streetName;
 		this.structureNum = structureNum;
-	//	this.fraddr = fraddr;
 	}
 
 	public String getName() {
@@ -96,14 +97,6 @@ public class Customer {
 		this.state = state;
 	}
 
-/*	public String getFraddl() {
-		return fraddl;
-	}
-
-	public void setFraddl(String fraddl) {
-		this.fraddl = fraddl;
-	}*/
-
 	public String getPostalCode() {
 		return postalCode;
 	}
@@ -143,12 +136,28 @@ public class Customer {
 		this._id = _id;
 	}
 
-/*	public String getFraddr() {
-		return fraddr;
+	public String getUrl_img() {
+		return url_img;
 	}
 
-	public void setFraddr(String fraddr) {
-		this.fraddr = fraddr;
+	public void setUrl_img(String url_img) {
+		this.url_img = url_img;
 	}
-*/
+
+	public String getSeverity() {
+		return severity;
+	}
+
+	public void setSeverity(String severity) {
+		this.severity = severity;
+	}
+
+	public String getExposure() {
+		return exposure;
+	}
+
+	public void setExposure(String exposure) {
+		this.exposure = exposure;
+	}
+
 }
