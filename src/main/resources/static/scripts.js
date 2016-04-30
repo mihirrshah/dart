@@ -150,7 +150,7 @@ function createInfoWindow(insuredCust, marker) {
   				"Insured: " +  insuredCust.name + "<br />" + 
   				"Policy #: " + insuredCust.policyNbr + "<br />" +
   				"Contact Info: " + insuredCust.telephoneNbr + "<br />" +  
-  				'<IMG BORDER="0" ALIGN="Left" SRC="stormDamageExample.jpg">'
+  				'<IMG BORDER="0" ALIGN="Left" SRC="' + insuredCust.url_img + '">'
   	}); 
   	infowindow.open(map, marker);	
    }      
