@@ -21,14 +21,26 @@
   <li style="float:right"><a class="active" href="#about">Login</a></li>
 </ul>
 <P>
-<span style="font-size:18px;"><label>Please upload images of affected area</label></span>
+<span style="font-size:18px;"><label>Please upload images for our Insured</label></span>
 </P>
-<div>
+<P></P>
 	<form method="POST" enctype="multipart/form-data" action="/upload">
 		<input type="file" id="Button1" accept="image/*" name="file" />
 		Name: <input type="text" name="name" />
   		<input type="submit" id="Button1" value="Upload" />
 	</form>
+</div>
+<P></P>
+
+<div class="datagrid">
+<table>
+<thead><tr><th>Customer Name</th><th>Policy Number</th><th>Severity</th><th>Estimated Exposure</th></tr></thead>
+<tfoot><tr><td colspan="4"><div id="paging"><ul>
+
+</ul></div></tr></tfoot>
+<tbody><tr><td>data</td><td>data</td><td>data</td><td>data</td></tr>
+</tbody>
+</table>
 </div>
 </body>
 </html>
