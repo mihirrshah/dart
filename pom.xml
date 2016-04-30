@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.clmapp.workerbees</groupId>
-	<artifactId>claim_demo</artifactId>
+	<artifactId>claim-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>WorkerBees Claim Application</name>
