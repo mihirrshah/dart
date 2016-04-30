@@ -4,6 +4,7 @@ import org.springframework.data.annotation.Id;
 public class Customer {
 	
 	@Id
+	private String _id;
 	private String name;
 	private String policyNbr;
 	private String distance;
@@ -23,6 +24,7 @@ public class Customer {
 	public Customer() {}
 	
 	public Customer (String name,String policyNbr, String distance, String position,String telephoneNbr, String city, String state, String postalCode, String countryCode, String streetName, String structureNum){
+		this._id = _id;
 		this.name = name;
 		this.policyNbr = policyNbr;
 		this.distance = distance;
@@ -132,6 +134,13 @@ public class Customer {
 
 	public void setStructureNum(String structureNum) {
 		this.structureNum = structureNum;
+	}
+	public String get_id() {
+		return _id;
+	}
+
+	public void set_id(String _id) {
+		this._id = _id;
 	}
 
 /*	public String getFraddr() {
