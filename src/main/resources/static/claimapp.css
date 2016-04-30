@@ -36,7 +36,7 @@ a:hover
 }
 #Shape1
 {
-   width: 800px;
+   width: 1000px;
    height: 824px;
    background-color: #FFFFFF;
    background-image: none;
@@ -52,7 +52,7 @@ a:hover
 }
 #Shape3
 {
-   width: 800px;
+   width: 1000px;
    height: 70px;
    background-color: #FFFFFF;
    background-image: none;
@@ -116,7 +116,7 @@ a:hover
 }
 #Shape20
 {
-   width: 620px;
+   width: 820px;
    height: 40px;
    background-color: #cc2d30;
    background-image: none;
@@ -609,7 +609,7 @@ a:hover
    position: absolute;
    left: 223px;
    top: 404px;
-   width: 523px;
+   width: 750px;
    height: 396px;
    z-index: 24;
 }

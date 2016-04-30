@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>DART - Drone Assisted Response Team</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,15 +31,18 @@
 		</ul>
 	</div>
 </p>	
-<span style="font-size:18px;"><label>Enter Address Information For Impacted Area</label></span>
-<div id="wb_JavaScript1">
-<div id="GoogleMaps"></div>
+
+<P>
+<span style="font-size:18px;"><label>Please upload images of affected area</label></span>
+</P>
+<div>
+	<form method="POST" enctype="multipart/form-data" action="/upload">
+		<input type="file" id="Button1" accept="image/*" name="file" />
+		Name: <input type="text" name="name" />
+  		<input type="submit" id="Button1" value="Upload" />
+	</form>
 </div>
-<script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=false'></script>
-<input type="text" id="Editbox1" name="address" value="" />
-<input type="button" id="Button1" onclick="GoogleMapcall()" name="" value="Find" />
-<label for="" id="Label2">Do you wish to initiate drone assistance for the impacted area?</label>
-<input type="button" id="Button2" onclick="callClaimSvcByzip()" name="" value="Yes" />
-<input type="button" id="Button3" name="" value="No" />
+
+
 </body>
 </html>
