@@ -120,13 +120,13 @@ function buildInsured(insuredlist) {
  		  var infowindow = new google.maps.InfoWindow({ 
       		content: '<IMG BORDER="0" ALIGN="Left" SRC="icon.png">' + 
       		"Insured: " +  insuredlist.Customer_zip[insured].name + "<br />" + 
-      		"Policy #: " + insuredlist.Customer_zip[insured].policynbr + "<br />" +
+      		"Policy #: " + insuredlist.Customer_zip[insured].policyNbr + "<br />" +
       		"Contact Info: " + insuredlist.Customer_zip[insured].telephoneNbr + "<br />" +  
       		'<IMG BORDER="0" ALIGN="Left" SRC="storm damage example.jpg">'
 	  	  });
  		   		  
  		  marker.addListener('click', function() {
-   			map.setZoom(8);
+   			map.setZoom(15);
     		map.setCenter(marker.getPosition());
     		infowindow.open(map, marker);
  		  });
